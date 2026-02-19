@@ -1,4 +1,4 @@
-baseURL: "https://YOUR_GITHUB_USERNAME.github.io/"
+baseURL: "https://lazfore.github.io/"
 languageCode: "en-us"
 title: "Jiarui Li — Research Notes"
 theme: "PaperMod"
@@ -31,7 +31,7 @@ params:
   # Optional: add social icons (safe to leave placeholders for now)
   socialIcons:
     - name: github
-      url: "https://github.com/YOUR_GITHUB_USERNAME"
+      url: "https://github.com/lazfore"
     - name: linkedin
       url: "https://www.linkedin.com/in/YOUR_LINKEDIN/"
     - name: googlescholar
@@ -59,3 +59,4 @@ outputs:
     - HTML
     - RSS
     - JSON
+ 
