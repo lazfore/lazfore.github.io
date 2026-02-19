@@ -1,0 +1,61 @@
+baseURL: "https://YOUR_GITHUB_USERNAME.github.io/"
+languageCode: "en-us"
+title: "Jiarui Li — Research Notes"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+
+params:
+  description: "Practical security foundations for LLM systems, prompt privacy, and trustworthy AI."
+  author: "Jiarui Li"
+
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowToc: true
+
+  # Home page behavior
+  mainSections:
+    - posts
+
+  # Optional: add social icons (safe to leave placeholders for now)
+  socialIcons:
+    - name: github
+      url: "https://github.com/YOUR_GITHUB_USERNAME"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/YOUR_LINKEDIN/"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=YOUR_ID"
+    - name: email
+      url: "mailto:YOUR_EMAIL"
+
+menu:
+  main:
+    - name: Posts
+      url: /posts/
+      weight: 1
+    - name: About
+      url: /about/
+      weight: 2
+    - name: Homepage
+      url: "https://YOUR_GOOGLE_SITE_URL"
+      weight: 3
+
+permalinks:
+  posts: "/posts/:slug/"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
