@@ -48,7 +48,7 @@ menu:
       url: /about/
       weight: 2
     - name: Homepage
-      url: "https://YOUR_GOOGLE_SITE_URL"
+      url: "https://sites.google.com/view/jiaruili"
       weight: 3
 
 permalinks:
