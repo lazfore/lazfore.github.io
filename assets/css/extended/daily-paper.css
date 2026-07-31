@@ -1,0 +1,101 @@
+.daily-paper-header {
+    margin-bottom: 24px;
+}
+
+.daily-paper-header .post-description {
+    margin-top: 8px;
+    color: var(--secondary);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.daily-paper-list {
+    overflow: hidden;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.daily-paper-entry {
+    border-bottom: 1px solid var(--border);
+}
+
+.daily-paper-entry:last-child {
+    border-bottom: 0;
+}
+
+.daily-paper-entry-link {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+    padding: 22px 24px;
+    color: inherit;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.daily-paper-entry-link:hover {
+    background: var(--code-bg);
+}
+
+.daily-paper-entry-link:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: -3px;
+}
+
+.daily-paper-icon {
+    font-size: 1.45rem;
+    line-height: 1.35;
+}
+
+.daily-paper-entry-content {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.daily-paper-entry-title {
+    color: var(--primary);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.daily-paper-entry-summary {
+    color: var(--secondary);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.daily-paper-empty {
+    padding: 48px 24px;
+    color: var(--secondary);
+    text-align: center;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.daily-paper-empty span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .daily-paper-entry-link {
+        gap: 10px;
+        padding: 18px 16px;
+    }
+
+    .daily-paper-entry-title {
+        font-size: 1.1rem;
+    }
+
+    .daily-paper-icon {
+        font-size: 1.2rem;
+    }
+}
