@@ -44,15 +44,19 @@ menu:
     - name: Posts
       url: /posts/
       weight: 1
+    - name: Daily Paper
+      url: /daily-paper/
+      weight: 2
     - name: About
       url: /about/
-      weight: 2
+      weight: 3
     - name: Homepage
       url: "https://sites.google.com/view/jiaruili"
-      weight: 3
+      weight: 4
 
 permalinks:
   posts: "/posts/:slug/"
+  daily-paper: "/daily-paper/:slug/"
 
 outputs:
   home:
