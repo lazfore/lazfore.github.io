@@ -1,0 +1,7 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" -}}
+<header class="home-section-title"{{ with $id }} id="{{ . }}"{{ end }}>
+    <div class="home-section-title__inner">
+        <h2>{{ $title }}</h2>
+    </div>
+</header>

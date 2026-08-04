@@ -1,0 +1,26 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" -}}
+{{- $image := .Get "image" -}}
+{{- $alt := .Get "alt" | default $title -}}
+{{- $placeholder := .Get "placeholder" | default "Project figure" -}}
+{{- $staticPath := printf "static%s" $image -}}
+<section class="home-project{{ if $image }} home-project--with-media{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
+    <div class="home-project__inner">
+        {{- with $image }}
+        <figure class="home-project__media">
+            {{- if fileExists $staticPath }}
+            <img src="{{ . | relURL }}" alt="{{ $alt }}" loading="lazy">
+            {{- else }}
+            <div class="home-media-placeholder" role="img" aria-label="{{ $placeholder }} placeholder">
+                <strong>{{ $placeholder }}</strong>
+                <span>{{ . }}</span>
+            </div>
+            {{- end }}
+        </figure>
+        {{- end }}
+        <div class="home-project__content">
+            <h2>{{ $title }}</h2>
+            {{- $.Inner | markdownify -}}
+        </div>
+    </div>
+</section>

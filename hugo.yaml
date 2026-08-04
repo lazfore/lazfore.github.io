@@ -15,6 +15,9 @@ params:
   description: "Practical security foundations for LLM systems, prompt privacy, and trustworthy AI."
   author: "Jiarui Li"
 
+  label:
+    text: "Jiarui Li's Homepage"
+
   defaultTheme: auto
   disableThemeToggle: false
 
@@ -41,8 +44,8 @@ params:
 
 menu:
   main:
-    - name: Posts
-      url: /posts/
+    - name: Home
+      url: /
       weight: 1
     - name: Daily Paper
       url: /daily-paper/
@@ -50,8 +53,8 @@ menu:
     - name: About
       url: /about/
       weight: 3
-    - name: Homepage
-      url: "https://sites.google.com/view/jiaruili"
+    - name: CV
+      url: /cv/
       weight: 4
 
 permalinks:

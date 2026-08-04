@@ -1,0 +1,21 @@
+{{- $image := .Get "image" -}}
+{{- $alt := .Get "alt" | default "Portrait of Jiarui Li" -}}
+{{- $placeholder := .Get "placeholder" | default "Profile photo" -}}
+{{- $staticPath := printf "static%s" $image -}}
+<section class="home-hero" aria-label="Profile">
+    <div class="home-hero__inner">
+        <div class="home-hero__media">
+            {{- if and $image (fileExists $staticPath) }}
+            <img src="{{ $image | relURL }}" alt="{{ $alt }}" width="900" height="1350" fetchpriority="high">
+            {{- else }}
+            <div class="home-media-placeholder" role="img" aria-label="{{ $placeholder }} placeholder">
+                <strong>{{ $placeholder }}</strong>
+                {{- with $image }}<span>{{ . }}</span>{{ end }}
+            </div>
+            {{- end }}
+        </div>
+        <div class="home-hero__content">
+            {{- .Inner | markdownify -}}
+        </div>
+    </div>
+</section>

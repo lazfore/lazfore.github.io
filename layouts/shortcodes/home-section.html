@@ -1,0 +1,11 @@
+{{- $id := .Get "id" -}}
+{{- $title := .Get "title" -}}
+{{- $class := .Get "class" -}}
+<section class="home-band {{ $class }}"{{ with $id }} id="{{ . }}"{{ end }}>
+    <div class="home-band__inner">
+        {{- with $title }}<h2>{{ . }}</h2>{{ end }}
+        <div class="home-band__content">
+            {{- $.Inner | markdownify -}}
+        </div>
+    </div>
+</section>
