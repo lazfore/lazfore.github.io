@@ -50,7 +50,7 @@ computation.
 
 {{< home-section-title id="research" title="Research Projects" >}}
 
-{{< home-project id="secure-inference" title="Secure Inference Outsourcing for IoT Devices" image="/images/home/secure-inference.webp" placeholder="Secure inference outsourcing architecture" >}}
+{{< home-project id="secure-inference" title="Secure Inference Outsourcing for IoT Devices" image="/images/CNNoutsourcing.png" placeholder="Secure inference outsourcing architecture" >}}
 
 As deep learning models become increasingly complex, executing inference
 locally on resource-constrained devices such as IoT sensors, drones, and
@@ -83,7 +83,7 @@ broadly applicable to edge, IoT, and distributed learning settings.
 
 {{< /home-project >}}
 
-{{< home-project id="verifiable-federated-learning" title="Verifiable Federated Learning with TEE" image="/images/home/verifiable-federated-learning.webp" placeholder="Verifiable federated learning architecture" >}}
+{{< home-project id="verifiable-federated-learning" title="Verifiable Federated Learning with TEE" image="/images/integrity-workflow.png" placeholder="Verifiable federated learning architecture" >}}
 
 Federated learning (FL) enables multiple participants to collaboratively train
 machine learning models without centralizing their raw data, offering a
