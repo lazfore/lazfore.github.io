@@ -12,6 +12,4 @@ This blog is where I turn reading and prototyping into structured notes—proble
 - Threat modeling for enterprise LLM deployments
 - Secure inference / privacy-preserving ML systems
 - Integrity in federated learning
-
-For my formal CV/publications/teaching, please see my main site https://sites.google.com/view/jiaruili.
  
