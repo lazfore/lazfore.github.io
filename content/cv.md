@@ -1,7 +1,7 @@
 ---
 title: "Curriculum Vitae"
 description: "Curriculum vitae of Jiarui Li."
-draft: false
+draft: true
 ---
 
 > **Attachment placeholder: Jiarui Li's CV (PDF, 5 pages)**

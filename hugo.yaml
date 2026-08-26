@@ -53,10 +53,6 @@ menu:
     - name: About
       url: /about/
       weight: 3
-    - name: CV
-      url: /cv/
-      weight: 4
-
 permalinks:
   posts: "/posts/:slug/"
   daily-paper: "/daily-paper/:slug/"
